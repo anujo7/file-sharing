@@ -4,7 +4,7 @@ const path=require('path');
 app.use(express.json());
 
 const PORT=process.env.PORT || 3000;
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 const connectDB=require('./config/db');
 connectDB();
